@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.buttons {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    background: #2d3436;
+    border-radius: 10px;
+    border: 3px solid black;
+    color: #fff;
+}
+.buttons:hover{
+    font-weight: bolder;
+    font-size: 29px;
+}
+.textview {
+    width: 200px;
+    margin: 5px;
+    font-size: 23px;
+    padding: 10px;
+    color: #ffffff;
+    text-overflow: ellipsis;
+    background: none;
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.bg {
+    background:linear-gradient( #c0392b, #f1c40f);
+    height: 100vh;
+}
+
+.border {
+    border-radius: 10px;
+}
+
+.igual {
+    background-color: #d63031;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.operacoes {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 4px solid ;
+    color: #000;
+}
+.textview::placeholder{
+    color: #c0c0c0;
+}
+#calc {
+    animation-name: initial;
+    color: rgb(255, 255, 255);
+    font-size: 50pt;
+    text-align: center;
+    text-shadow: 5px 5px 10px  rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 500px){
+    .main{
+        margin-top: 80px;
+    }
+}
