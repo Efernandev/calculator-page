@@ -14,26 +14,30 @@
     border: none;
     background: #2d3436;
     border-radius: 10px;
-    border: 3px solid black;
+    box-shadow: 0px 0px 5px black;
     color: #fff;
+    transition:all .2s ease-in-out;
 }
 .buttons:hover{
-    font-weight: bolder;
-    font-size: 29px;
+    background:#474e50;
 }
 .textview {
     width: 200px;
     margin: 5px;
     font-size: 23px;
     padding: 10px;
-    color: #ffffff;
+    color: #000000;
     text-overflow: ellipsis;
     background: none;
-    border: 3px solid black;
-    border-radius: 20px;
+    border: 2px solid gray;
+    background:rgb(218, 218, 218);
+    border-radius: 5px;
+    margin-left: 0;
 
 }
-
+.textview::placeholder{
+    color: rgb(0,0,0);
+}
 .main {
     position: absolute;
     top: 50%;
@@ -42,7 +46,7 @@
 }
 
 .bg {
-    background:linear-gradient( #c0392b, #f1c40f);
+    background:linear-gradient( #0c033b, #290bc2);
     height: 100vh;
 }
 
@@ -51,27 +55,30 @@
 }
 
 .igual {
-    background-color: #d63031;
-    color: rgb(0, 0, 0);
-    font-weight: bolder;
+    background-image: linear-gradient(45deg, rgb(29, 29, 29), rgb(122, 122, 122));
+    color: rgb(255,255,255 );
+    transition: all .5s ease-out;
+}
+.igual:hover{
+    background-image: linear-gradient(45deg, rgb(122, 122, 122), rgb(29, 29, 29));
 }
 
 .operacoes {
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: 4px solid ;
-    color: #000;
+    background: #222324;
+    color: white;
+}
+.operacoes:hover{
+    background: #525455;
 }
 .textview::placeholder{
     color: #c0c0c0;
 }
 #calc {
-    animation-name: initial;
     color: rgb(255, 255, 255);
     font-size: 50pt;
     text-align: center;
-    text-shadow: 5px 5px 10px  rgb(0, 0, 0);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 500px){
