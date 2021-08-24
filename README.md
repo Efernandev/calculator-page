@@ -1,3 +1,5 @@
-# calculator
-simulation of calculator en-US
-Simulacão de uma calculadora - pt-BR
+# Calculadora simples e moderna
+
+---
+
+O layout dos botões foi feito com tags de tabela como `tr` e `td`. 
