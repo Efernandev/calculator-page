@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>calculator</title>
-    <!-- CSS -->
+    <title>Calculadora simples</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- icons  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
     <div class="bg">
-        <div class="title">
-            <h1 id="calc">calculate here...</h1>
-        </div>
+        <div class="title"> 
+            <h1 id="calc">Calculadora </h1>
+        </div> 
     </div>
     <div class="main">
         <form name="form">
@@ -23,8 +21,8 @@
         </form>    
         <table>
             <tr>
-                <td><input class="buttons material-icons" type="button" value="reply_all" onclick="Clean()"></td>
-                <td><input class="buttons operacoes material-icons" type="button" value="keyboard_backspace" onclick="back()"></td>
+                <td><input class="buttons material-icons" type="button" value="reply_all" onclick="reset()"></td>
+                <td><input class="buttons operacoes material-icons" type="button" value="keyboard_backspace" onclick="removeLetter()"></td>
                 <td><input class="buttons operacoes" type="button" value="/"  onclick="insert('/')"></td>
                 <td><input class="buttons operacoes" type="button" value="x" onclick="insert('*')"></td>
             </tr>
@@ -45,7 +43,7 @@
                 <td><input class="buttons" type="button" value="1" onclick="insert(1)"></td>
                 <td><input class="buttons" type="button" value="2" onclick="insert(2)"></td>
                 <td><input class="buttons" type="button" value="3" onclick="insert(3)"></td>
-                <td rowspan="2"><input class="buttons border igual material-icons" style="height: 106px;" type="button" value="send" onclick="equal()"></td>
+                <td rowspan="2"><input class="buttons border igual material-icons" style="height: 106px;" type="button" value="send" onclick="result()"></td>
             </tr>
 
             <tr>
