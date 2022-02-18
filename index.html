@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculadora simples</title>
+    <title>Calculadora | Efernandev</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
     <div class="bg">
-        <div class="title"> 
+        <div class="title">
             <h1 id="calc">Calculadora </h1>
-        </div> 
+        </div>
     </div>
     <div class="main">
         <form name="form">
-            <input type="text" class="textview" name="textview" placeholder="valores" readonly="true"> <br>
-        </form>    
+            <input type="text" class="textview" name="textview" placeholder="valores" readonly="true" title="Não se pode digitar aqui"> <br>
+        </form>
         <table>
             <tr>
-                <td><input class="buttons material-icons" type="button" value="reply_all" onclick="reset()"></td>
-                <td><input class="buttons operacoes material-icons" type="button" value="keyboard_backspace" onclick="removeLetter()"></td>
+                <td><input class="buttons material-icons" type="button" value="remove_circle" onclick="reset()"></td>
+                <td><input class="buttons  material-icons" type="button" value="backspace" onclick="removeLetter()"></td>
                 <td><input class="buttons operacoes" type="button" value="/"  onclick="insert('/')"></td>
                 <td><input class="buttons operacoes" type="button" value="x" onclick="insert('*')"></td>
             </tr>
@@ -47,7 +47,7 @@
             </tr>
 
             <tr>
-                <td colspan=2><input class="buttons border" style='width:106px' class="border" type="button" value="0" onclick="insert(0)"></td>  
+                <td colspan=2><input class="buttons border" style='width:106px' class="border" type="button" value="0" onclick="insert(0)"></td>
                 <td><input class="buttons " type="button" value="." onclick="insert('.')"></td>
             </tr>
         </table>

@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-
+	box-sizing: border-box;
+	outline:none;
 }
 
 
@@ -12,31 +13,35 @@
     margin: 2px;
     cursor: pointer;
     border: none;
-    background: #2d3436;
-    border-radius: 10px;
+    background: #2c2d2e;
+    border-radius: 4px;
     box-shadow: 0px 0px 5px black;
     color: #fff;
-    transition:all .2s ease-in-out;
+    transition:background .2s ease-in-out;
+}
+.buttons:active{
+	transform: scale(0.91);
 }
 .buttons:hover{
-    background:#474e50;
+	filter: brightness(1.3);
 }
 .textview {
-    width: 200px;
+    width: 225px;
     margin: 5px;
     font-size: 23px;
     padding: 10px;
-    color: #000000;
+    color: #999;
     text-overflow: ellipsis;
     background: none;
-    border: 2px solid gray;
-    background:rgb(218, 218, 218);
-    border-radius: 5px;
+	/* border:none; */
+    border: 2px solid #555;
+    background:rgb(43, 42, 42);
+    border-radius: 0;
     margin-left: 0;
-
+	color:white;
 }
 .textview::placeholder{
-    color: rgb(0,0,0);
+	color: white;
 }
 .main {
     position: absolute;
@@ -46,29 +51,34 @@
 }
 
 .bg {
-    background:linear-gradient( #0c033b, #290bc2);
+    background:linear-gradient(45deg, #171818, #2e2c2c);
     height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(1.1);
 }
 
 .border {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .igual {
-    background-image: linear-gradient(45deg, rgb(29, 29, 29), rgb(122, 122, 122));
+    background-image: linear-gradient(45deg, rgb(29, 29, 29), rgb(71, 71, 71));
     color: rgb(255,255,255 );
-    transition: all .5s ease-out;
+    transition: filter 100ms ease;
 }
 .igual:hover{
-    background-image: linear-gradient(45deg, rgb(122, 122, 122), rgb(29, 29, 29));
+    filter: brightness(1.3);
 }
 
 .operacoes {
-    background: #222324;
+    background: #1a1b1b;
     color: white;
+	transition: filter 100ms ease;
 }
 .operacoes:hover{
-    background: #525455;
+    /* background:#2a2b2c; */
+	filter: brightness(1.3);
 }
 .textview::placeholder{
     color: #c0c0c0;
@@ -79,6 +89,8 @@
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
+	position: relative;
+	top:50px;
 }
 
 @media screen and (max-width: 500px){
